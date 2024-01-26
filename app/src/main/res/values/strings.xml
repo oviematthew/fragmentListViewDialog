@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Lab 1</string>
-    <string name="header_text">Lab 1</string>
+    <string name="my_name">Matthew Ovie Enamuotor</string>
     <string name="back_btn">Back Home</string>
+    <string name="take_survey">Take Survey</string>
+    <string name="instructions">Instructions</string>
     <string name="choice">Please make a choice</string>
     <string name="confirm">Survey Dialog Fragment</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>

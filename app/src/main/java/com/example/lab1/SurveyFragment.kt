@@ -34,10 +34,10 @@ class SurveyFragment : DialogFragment() {
                     dialog, which ->
                 sendMessages!!.choiceMade(which)
             })
-            .setPositiveButton(android.R.string.ok, DialogInterface.OnClickListener {
+            .setPositiveButton(R.string.ok, DialogInterface.OnClickListener {
                     dialog, which -> Log.d("confirmation dialog", "positive button")
             })
-            .setNegativeButton(android.R.string.cancel, DialogInterface.OnClickListener {
+            .setNegativeButton(R.string.cancel, DialogInterface.OnClickListener {
                     dialog, which -> Log.d("confirmation dialog", "negative button")
             }).create()
 
@@ -46,7 +46,9 @@ class SurveyFragment : DialogFragment() {
     companion object {
 
         var levels = arrayOf( "Level 1", "Level 2", "Level 3", "Level 4")
-        var checkedItem = 1
+
+        //select nothing first
+        var checkedItem = -1
 
         @JvmStatic
         open fun newInstance(title: Int):

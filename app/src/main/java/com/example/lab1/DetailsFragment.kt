@@ -22,6 +22,12 @@ class DetailsFragment : Fragment() {
     }
 
     fun change(levelName: String?) {
-        binding.levelValue.text = levelName
+        when (levelName) {
+            "Level 1" -> binding.levelValue.text = "Level 1 \n Immediate Gratification: Pleasure and minimize pain"
+            "Level 2" -> binding.levelValue.text = "Level 2 \n Comparative/Personal Achievement: Ego Centeredness, better than, gain advantage"
+            "Level 3" -> binding.levelValue.text = "Level 3 \n Contributive: Do good beyond self, Make an optimal positive difference for others"
+            "Level 4" -> binding.levelValue.text = "Level 4 \n Ultimate Good: Participate in giving and receiving ultimate meaning, goodness, ideals and love."
+            else -> binding.levelValue.text = levelName
+        }
     }
 }

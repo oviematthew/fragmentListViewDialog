@@ -41,7 +41,7 @@ class LevelsFragment : ListFragment() {
         (activity as? ICommunicator)?.passLevelsInfo(levels[position])
 
         // selected item color
-        listView.setSelector(android.R.color.black)
+        listView.setSelector(android.R.color.holo_blue_light)
 
     }
 

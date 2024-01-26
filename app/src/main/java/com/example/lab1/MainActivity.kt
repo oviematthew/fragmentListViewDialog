@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity(), SurveyFragment.SendMessages {
 
     override fun choiceMade(msg: Int?)
     {
-        binding.surveyTextView.text = "My choice is: ${SurveyFragment.levels[msg!!]}"
+        binding.surveyTextView.text = "Happiness Level is: ${SurveyFragment.levels[msg!!]}"
         SurveyFragment.checkedItem = msg
     }
 }
